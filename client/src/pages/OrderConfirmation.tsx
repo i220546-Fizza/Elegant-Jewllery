@@ -7,6 +7,7 @@ import { getErrorMessage } from '../services/api';
 import { formatCurrency, formatDate } from '../utils/format';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { CheckIcon, TruckIcon } from '../components/Icons';
+import { BANK_DETAILS, EASYPAISA_DETAILS } from '../utils/paymentDetails';
 
 const OrderConfirmation = () => {
   const { id } = useParams<{ id: string }>();
@@ -120,6 +121,31 @@ const OrderConfirmation = () => {
           <TruckIcon width={22} height={22} className="text-champagne-dark" />
           Estimated delivery within 3-5 business days. We'll notify you as your order progresses.
         </div>
+
+        {order.paymentMethod === 'Bank Transfer' && (
+          <div className="mt-6 space-y-1 rounded-xl bg-champagne/10 p-4 text-sm text-brown-dark">
+            <p className="font-medium">Complete your payment to confirm this order:</p>
+            <p><span className="font-medium">Account Title:</span> {BANK_DETAILS.accountTitle}</p>
+            <p><span className="font-medium">IBAN:</span> {BANK_DETAILS.iban}</p>
+            <p><span className="font-medium">Branch:</span> {BANK_DETAILS.branch}</p>
+            <p className="mt-2 text-xs text-brown-light">
+              Transfer {formatCurrency(order.totalPrice)} to this account. We'll confirm your order once the
+              payment is received.
+            </p>
+          </div>
+        )}
+
+        {order.paymentMethod === 'Easypaisa' && (
+          <div className="mt-6 space-y-1 rounded-xl bg-champagne/10 p-4 text-sm text-brown-dark">
+            <p className="font-medium">Complete your payment to confirm this order:</p>
+            <p><span className="font-medium">Account Title:</span> {EASYPAISA_DETAILS.accountTitle}</p>
+            <p><span className="font-medium">Easypaisa Number:</span> {EASYPAISA_DETAILS.number}</p>
+            <p className="mt-2 text-xs text-brown-light">
+              Send {formatCurrency(order.totalPrice)} to this Easypaisa account. We'll confirm your order once the
+              payment is received.
+            </p>
+          </div>
+        )}
       </div>
 
       <div className="mt-10 flex justify-center gap-4">

@@ -30,7 +30,12 @@ const orderSchema = new mongoose.Schema(
       country: { type: String, required: true, default: 'Pakistan' },
     },
     orderNotes: { type: String, default: '' },
-    paymentMethod: { type: String, required: true, enum: ['Cash on Delivery'], default: 'Cash on Delivery' },
+    paymentMethod: {
+      type: String,
+      required: true,
+      enum: ['Cash on Delivery', 'Bank Transfer', 'Easypaisa'],
+      default: 'Cash on Delivery',
+    },
     itemsPrice: { type: Number, required: true, default: 0 },
     shippingPrice: { type: Number, required: true, default: 0 },
     totalPrice: { type: Number, required: true, default: 0 },

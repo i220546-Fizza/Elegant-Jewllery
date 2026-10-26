@@ -7,6 +7,7 @@ import { createOrder } from '../services/orderService';
 import { getErrorMessage } from '../services/api';
 import { formatCurrency } from '../utils/format';
 import { ShieldIcon, TruckIcon } from '../components/Icons';
+import { BANK_DETAILS, EASYPAISA_DETAILS, PAYMENT_METHODS, type PaymentMethod } from '../utils/paymentDetails';
 
 const FREE_SHIPPING_THRESHOLD = 15000;
 const SHIPPING_FEE = 200;
@@ -16,6 +17,7 @@ const Checkout = () => {
   const { user } = useAuth();
   const navigate = useNavigate();
   const [submitting, setSubmitting] = useState(false);
+  const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>('Cash on Delivery');
 
   const [form, setForm] = useState({
     name: user?.name || '',
@@ -70,7 +72,7 @@ const Checkout = () => {
           country: form.country,
         },
         orderNotes: form.orderNotes,
-        paymentMethod: 'Cash on Delivery',
+        paymentMethod,
       });
       clearCart();
       toast.success('Order placed successfully!');
@@ -118,13 +120,53 @@ const Checkout = () => {
 
           <div className="card-luxe p-6">
             <h2 className="mb-5 font-display text-xl text-brown-dark">Payment Method</h2>
-            <label className="flex cursor-pointer items-center gap-3 rounded-lg border border-champagne-dark bg-champagne/10 p-4">
-              <input type="radio" checked readOnly name="paymentMethod" />
-              <div>
-                <p className="font-medium text-brown-dark">Cash on Delivery</p>
-                <p className="text-xs text-brown-light">Pay with cash when your order arrives at your doorstep.</p>
+            <div className="space-y-3">
+              {PAYMENT_METHODS.map((method) => (
+                <label
+                  key={method.value}
+                  className={`flex cursor-pointer items-center gap-3 rounded-lg border p-4 transition-colors ${
+                    paymentMethod === method.value
+                      ? 'border-champagne-dark bg-champagne/10'
+                      : 'border-brown-dark/10 hover:border-champagne-dark/50'
+                  }`}
+                >
+                  <input
+                    type="radio"
+                    name="paymentMethod"
+                    value={method.value}
+                    checked={paymentMethod === method.value}
+                    onChange={() => setPaymentMethod(method.value)}
+                  />
+                  <div>
+                    <p className="font-medium text-brown-dark">{method.label}</p>
+                    <p className="text-xs text-brown-light">{method.description}</p>
+                  </div>
+                </label>
+              ))}
+            </div>
+
+            {paymentMethod === 'Bank Transfer' && (
+              <div className="mt-4 space-y-1 rounded-lg bg-cream p-4 text-sm text-brown-dark">
+                <p><span className="font-medium">Account Title:</span> {BANK_DETAILS.accountTitle}</p>
+                <p><span className="font-medium">IBAN:</span> {BANK_DETAILS.iban}</p>
+                <p><span className="font-medium">Branch:</span> {BANK_DETAILS.branch}</p>
+                <p className="mt-2 text-xs text-brown-light">
+                  Please transfer {formatCurrency(total)} to this account, then place your order. Your order will
+                  be confirmed once we verify the payment.
+                </p>
               </div>
-            </label>
+            )}
+
+            {paymentMethod === 'Easypaisa' && (
+              <div className="mt-4 space-y-1 rounded-lg bg-cream p-4 text-sm text-brown-dark">
+                <p><span className="font-medium">Account Title:</span> {EASYPAISA_DETAILS.accountTitle}</p>
+                <p><span className="font-medium">Easypaisa Number:</span> {EASYPAISA_DETAILS.number}</p>
+                <p className="mt-2 text-xs text-brown-light">
+                  Please send {formatCurrency(total)} to this Easypaisa account, then place your order. Your order
+                  will be confirmed once we verify the payment.
+                </p>
+              </div>
+            )}
           </div>
         </div>
 
