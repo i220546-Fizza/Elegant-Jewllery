@@ -16,16 +16,16 @@ const Footer = () => (
           Made to be worn, loved and passed down.
         </p>
         <div className="mt-6 flex gap-4 text-brown-dark">
-          <a href="https://www.instagram.com/elegantjewlry?stkn=MTRxODBnOXRkZnl4cA==" aria-label="Instagram" className="transition-transform hover:-translate-y-0.5 hover:text-champagne-dark">
+          <a href="https://www.instagram.com/fizara_jewels?utm_source=qr&mdxt=ejNzYTFsd3NwZjl4" aria-label="Instagram" className="transition-transform hover:-translate-y-0.5 hover:text-champagne-dark">
             <InstagramIcon />
           </a>
-          <a href="https://www.instagram.com/elegantjewlry?stkn=MTRxODBnOXRkZnl4cA==" aria-label="Facebook" className="transition-transform hover:-translate-y-0.5 hover:text-champagne-dark">
+          <a href="https://www.instagram.com/fizara_jewels?utm_source=qr&mdxt=ejNzYTFsd3NwZjl4" aria-label="Facebook" className="transition-transform hover:-translate-y-0.5 hover:text-champagne-dark">
             <FacebookIcon />
           </a>
-          <a href="https://www.instagram.com/elegantjewlry?stkn=MTRxODBnOXRkZnl4cA==" aria-label="Twitter" className="transition-transform hover:-translate-y-0.5 hover:text-champagne-dark">
+          <a href="https://www.instagram.com/fizara_jewels?utm_source=qr&mdxt=ejNzYTFsd3NwZjl4" aria-label="Twitter" className="transition-transform hover:-translate-y-0.5 hover:text-champagne-dark">
             <TwitterIcon />
           </a>
-          <a href="https://www.instagram.com/elegantjewlry?stkn=MTRxODBnOXRkZnl4cA==" aria-label="Pinterest" className="transition-transform hover:-translate-y-0.5 hover:text-champagne-dark">
+          <a href="https://www.instagram.com/fizara_jewels?utm_source=qr&mdxt=ejNzYTFsd3NwZjl4" aria-label="Pinterest" className="transition-transform hover:-translate-y-0.5 hover:text-champagne-dark">
             <PinterestIcon />
           </a>
         </div>

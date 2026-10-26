@@ -1,7 +1,7 @@
 import { InstagramIcon } from './Icons';
 import Reveal from './Reveal';
 
-const HANDLE = '@elegantjewellery';
+const HANDLE = '@fizara_jewels';
 const IMAGES = ['category-earrings', 'category-rings', 'category-bracelets', 'category-necklaces'];
 
 const InstagramSection = () => (
@@ -15,7 +15,7 @@ const InstagramSection = () => (
         {IMAGES.map((id) => (
           <a
             key={id}
-            href="https://www.instagram.com/elegantjewlry?stkn=MTRxODBnOXRkZnl4cA=="
+            href="https://www.instagram.com/fizara_jewels?utm_source=qr&mdxt=ejNzYTFsd3NwZjl4"
             className="group relative aspect-square overflow-hidden rounded-xl bg-beige"
             aria-label="View on Instagram"
           >

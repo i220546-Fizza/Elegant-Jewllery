@@ -100,9 +100,9 @@ const Contact = () => {
               <li>Hours: Mon - Sat, 10am - 8pm</li>
             </ul>
             <div className="mt-4 flex gap-4 text-brown-dark">
-              <a href="https://www.instagram.com/elegantjewlry?stkn=MTRxODBnOXRkZnl4cA==" aria-label="Instagram" className="hover:text-champagne-dark"><InstagramIcon /></a>
-              <a href="https://www.instagram.com/elegantjewlry?stkn=MTRxODBnOXRkZnl4cA==" aria-label="Facebook" className="hover:text-champagne-dark"><FacebookIcon /></a>
-              <a href="https://www.instagram.com/elegantjewlry?stkn=MTRxODBnOXRkZnl4cA==" aria-label="Twitter" className="hover:text-champagne-dark"><TwitterIcon /></a>
+              <a href="https://www.instagram.com/fizara_jewels?utm_source=qr&mdxt=ejNzYTFsd3NwZjl4" aria-label="Instagram" className="hover:text-champagne-dark"><InstagramIcon /></a>
+              <a href="https://www.instagram.com/fizara_jewels?utm_source=qr&mdxt=ejNzYTFsd3NwZjl4" aria-label="Facebook" className="hover:text-champagne-dark"><FacebookIcon /></a>
+              <a href="https://www.instagram.com/fizara_jewels?utm_source=qr&mdxt=ejNzYTFsd3NwZjl4" aria-label="Twitter" className="hover:text-champagne-dark"><TwitterIcon /></a>
             </div>
           </div>
 
