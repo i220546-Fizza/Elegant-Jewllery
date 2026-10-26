@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FacebookIcon, InstagramIcon, PinterestIcon, TwitterIcon } from './Icons';
+import { InstagramIcon, PinterestIcon } from './Icons';
 
 const Footer = () => (
   <footer className="relative mt-24 overflow-hidden border-t border-champagne/20 bg-cream">
@@ -18,12 +18,6 @@ const Footer = () => (
         <div className="mt-6 flex gap-4 text-brown-dark">
           <a href="https://www.instagram.com/fizara_jewels?utm_source=qr&mdxt=ejNzYTFsd3NwZjl4" aria-label="Instagram" className="transition-transform hover:-translate-y-0.5 hover:text-champagne-dark">
             <InstagramIcon />
-          </a>
-          <a href="https://www.instagram.com/fizara_jewels?utm_source=qr&mdxt=ejNzYTFsd3NwZjl4" aria-label="Facebook" className="transition-transform hover:-translate-y-0.5 hover:text-champagne-dark">
-            <FacebookIcon />
-          </a>
-          <a href="https://www.instagram.com/fizara_jewels?utm_source=qr&mdxt=ejNzYTFsd3NwZjl4" aria-label="Twitter" className="transition-transform hover:-translate-y-0.5 hover:text-champagne-dark">
-            <TwitterIcon />
           </a>
           <a href="https://www.instagram.com/fizara_jewels?utm_source=qr&mdxt=ejNzYTFsd3NwZjl4" aria-label="Pinterest" className="transition-transform hover:-translate-y-0.5 hover:text-champagne-dark">
             <PinterestIcon />

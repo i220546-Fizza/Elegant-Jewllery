@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
-import { ChevronDownIcon, FacebookIcon, InstagramIcon, TwitterIcon } from '../components/Icons';
+import { ChevronDownIcon, InstagramIcon } from '../components/Icons';
 
 const FAQS = [
   {
@@ -101,8 +101,6 @@ const Contact = () => {
             </ul>
             <div className="mt-4 flex gap-4 text-brown-dark">
               <a href="https://www.instagram.com/fizara_jewels?utm_source=qr&mdxt=ejNzYTFsd3NwZjl4" aria-label="Instagram" className="hover:text-champagne-dark"><InstagramIcon /></a>
-              <a href="https://www.instagram.com/fizara_jewels?utm_source=qr&mdxt=ejNzYTFsd3NwZjl4" aria-label="Facebook" className="hover:text-champagne-dark"><FacebookIcon /></a>
-              <a href="https://www.instagram.com/fizara_jewels?utm_source=qr&mdxt=ejNzYTFsd3NwZjl4" aria-label="Twitter" className="hover:text-champagne-dark"><TwitterIcon /></a>
             </div>
           </div>
 
