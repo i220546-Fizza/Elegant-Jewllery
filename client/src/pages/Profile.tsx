@@ -39,7 +39,7 @@ const Profile = () => {
   const [saving, setSaving] = useState(false);
 
   useEffect(() => {
-    document.title = 'My Account | Elegant Jewellery';
+    document.title = 'My Account | Fizara-N-Sitara';
     fetchMyOrders()
       .then(setOrders)
       .catch((err) => toast.error(getErrorMessage(err)))

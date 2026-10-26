@@ -8,7 +8,7 @@ const Wishlist = () => {
   const { products } = useWishlist();
 
   useEffect(() => {
-    document.title = 'Wishlist | Elegant Jewellery';
+    document.title = 'Wishlist | Fizara-N-Sitara';
   }, []);
 
   return (

@@ -39,7 +39,7 @@ const Contact = () => {
   const [sending, setSending] = useState(false);
 
   useEffect(() => {
-    document.title = 'Contact Us | Elegant Jewellery';
+    document.title = 'Contact Us | Fizara-N-Sitara';
   }, []);
 
   const handleSubmit = (e: React.FormEvent) => {

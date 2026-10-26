@@ -60,7 +60,7 @@ const Shop = () => {
   );
 
   useEffect(() => {
-    document.title = 'Shop | Elegant Jewellery';
+    document.title = 'Shop | Fizara-N-Sitara';
   }, []);
 
   useEffect(() => {

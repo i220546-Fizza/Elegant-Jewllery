@@ -3,7 +3,7 @@ import { EyeIcon } from '../components/Icons';
 
 const Privacy = () => {
   useEffect(() => {
-    document.title = 'Privacy Policy | Elegant Jewellery';
+    document.title = 'Privacy Policy | Fizara-N-Sitara';
   }, []);
 
   return (
@@ -22,7 +22,7 @@ const Privacy = () => {
           <p className="mt-2">
             When you create an account, place an order, or contact us, we collect the information you provide -
             your name, email, phone number and shipping address - solely to process orders and improve your
-            experience with Elegant Jewellery.
+            experience with Fizara-N-Sitara.
           </p>
         </div>
         <div>

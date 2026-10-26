@@ -13,7 +13,7 @@ const Login = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    document.title = 'Sign In | Elegant Jewellery';
+    document.title = 'Sign In | Fizara-N-Sitara';
   }, []);
 
   const from = (location.state as { from?: { pathname: string } } | null)?.from?.pathname || '/';

@@ -28,7 +28,7 @@ const WhyChooseUs = () => (
   <section className="bg-cream py-20">
     <div className="container-luxe">
       <Reveal className="mx-auto max-w-2xl text-center">
-        <p className="section-kicker">Why Elegant Jewellery</p>
+        <p className="section-kicker">Why Fizara-N-Sitara</p>
         <h2 className="section-heading mt-3">Crafted With Care, Worn With Confidence</h2>
       </Reveal>
       <div className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">

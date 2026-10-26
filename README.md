@@ -1,6 +1,6 @@
-# Elegant Jewellery
+# Fizara-N-Sitara
 
-A full-stack, production-quality e-commerce website for **Elegant Jewellery** — a premium, minimal, feminine jewellery brand. Built with React + TypeScript + Vite + Tailwind CSS on the frontend and Node.js + Express + MongoDB (Mongoose) on the backend.
+A full-stack, production-quality e-commerce website for **Fizara-N-Sitara** — a premium, minimal, feminine jewellery brand. Built with React + TypeScript + Vite + Tailwind CSS on the frontend and Node.js + Express + MongoDB (Mongoose) on the backend.
 
 > This repository was empty when this build started (no prior commits, no product images). Since no product photography existed and external image hosts are blocked by this environment's network policy, all product/hero imagery was generated as original, cohesive line-art SVG artwork in the brand's champagne-gold palette (see **Product Images** below). Everything else — auth, cart, checkout, orders, reviews, wishlist, admin panel — is fully wired to a real MongoDB database, not mocked.
 

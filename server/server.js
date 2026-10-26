@@ -48,7 +48,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
-app.get('/api/health', (req, res) => res.json({ success: true, message: 'Elegant Jewellery API is running' }));
+app.get('/api/health', (req, res) => res.json({ success: true, message: 'Fizara-N-Sitara API is running' }));
 
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
@@ -76,7 +76,7 @@ app.use(errorHandler);
 const PORT = process.env.PORT || 5000;
 
 const server = app.listen(PORT, () => {
-  console.log(`Elegant Jewellery API listening on port ${PORT} (${process.env.NODE_ENV || 'development'})`);
+  console.log(`Fizara-N-Sitara API listening on port ${PORT} (${process.env.NODE_ENV || 'development'})`);
 });
 
 process.on('unhandledRejection', (err) => {

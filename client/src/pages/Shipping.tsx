@@ -3,7 +3,7 @@ import { TruckIcon } from '../components/Icons';
 
 const Shipping = () => {
   useEffect(() => {
-    document.title = 'Shipping Information | Elegant Jewellery';
+    document.title = 'Shipping Information | Fizara-N-Sitara';
   }, []);
 
   return (
@@ -42,7 +42,7 @@ const Shipping = () => {
         <div>
           <h2 className="font-display text-xl text-brown-dark">Packaging</h2>
           <p className="mt-2">
-            Every piece arrives in signature Elegant Jewellery packaging, ready to gift or treasure - no
+            Every piece arrives in signature Fizara-N-Sitara packaging, ready to gift or treasure - no
             additional wrapping needed.
           </p>
         </div>

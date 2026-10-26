@@ -23,7 +23,7 @@ const AdminProducts = () => {
   };
 
   useEffect(() => {
-    document.title = 'Manage Products | Elegant Jewellery Admin';
+    document.title = 'Manage Products | Fizara-N-Sitara Admin';
     loadProducts();
   }, []);
 

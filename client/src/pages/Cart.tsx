@@ -14,7 +14,7 @@ const Cart = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    document.title = 'Shopping Bag | Elegant Jewellery';
+    document.title = 'Shopping Bag | Fizara-N-Sitara';
   }, []);
 
   const shipping = items.length === 0 ? 0 : subtotal >= FREE_SHIPPING_THRESHOLD ? 0 : SHIPPING_FEE;

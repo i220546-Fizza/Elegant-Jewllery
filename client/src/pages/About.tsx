@@ -22,7 +22,7 @@ const VALUES = [
 
 const About = () => {
   useEffect(() => {
-    document.title = 'About Us | Elegant Jewellery';
+    document.title = 'About Us | Fizara-N-Sitara';
   }, []);
 
   return (
@@ -33,7 +33,7 @@ const About = () => {
             <p className="section-kicker">Our Story</p>
             <h1 className="section-heading mt-3">Elegance, Crafted for the Modern Woman</h1>
             <p className="mt-6 leading-relaxed text-brown-light">
-              Elegant Jewellery was born from a simple belief: that fine jewellery should feel personal, not
+              Fizara-N-Sitara was born from a simple belief: that fine jewellery should feel personal, not
               precious in the untouchable sense. We design each piece to be worn daily, layered freely, and passed
               down with meaning - blending timeless craftsmanship with a modern, minimal sensibility.
             </p>
@@ -47,7 +47,7 @@ const About = () => {
               Explore Our Collections
             </Link>
           </div>
-          <img src="/images/category-earrings.jpg" alt="Elegant Jewellery craftsmanship" className="w-full rounded-3xl shadow-soft" />
+          <img src="/images/category-earrings.jpg" alt="Fizara-N-Sitara craftsmanship" className="w-full rounded-3xl shadow-soft" />
         </div>
       </section>
 

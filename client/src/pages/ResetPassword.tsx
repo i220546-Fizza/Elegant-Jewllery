@@ -14,7 +14,7 @@ const ResetPassword = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    document.title = 'Reset Password | Elegant Jewellery';
+    document.title = 'Reset Password | Fizara-N-Sitara';
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {

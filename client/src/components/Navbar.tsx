@@ -71,7 +71,7 @@ const Navbar = () => {
 
         <Link to="/" className="mx-auto lg:mx-0 flex flex-col items-center lg:items-start">
           <span className="font-display text-2xl sm:text-3xl tracking-[0.15em] text-brown-dark">
-            ELEGANT <span className="bg-gold-sheen bg-clip-text text-transparent">JEWELLERY</span>
+            FIZARA-N-<span className="bg-gold-sheen bg-clip-text text-transparent">SITARA</span>
           </span>
           <span className="hidden sm:block text-[10px] uppercase tracking-widest2 text-champagne-dark">
             Timeless &middot; Elegant &middot; Yours

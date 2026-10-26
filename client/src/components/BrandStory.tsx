@@ -20,7 +20,7 @@ const BrandStory = () => {
           <motion.img
             style={{ y: imageY }}
             src="/images/category-earrings.jpg"
-            alt="Elegant Jewellery craftsmanship"
+            alt="Fizara-N-Sitara craftsmanship"
             className="relative w-full rounded-3xl shadow-lux"
           />
         </Reveal>

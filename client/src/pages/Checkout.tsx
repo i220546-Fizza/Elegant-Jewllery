@@ -29,7 +29,7 @@ const Checkout = () => {
   });
 
   useEffect(() => {
-    document.title = 'Checkout | Elegant Jewellery';
+    document.title = 'Checkout | Fizara-N-Sitara';
   }, []);
 
   if (items.length === 0) {

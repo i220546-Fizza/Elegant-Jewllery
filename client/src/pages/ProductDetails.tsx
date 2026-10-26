@@ -47,7 +47,7 @@ const ProductDetails = () => {
         setActiveImage(0);
         setQuantity(1);
         setSize(p.sizes[0] || '');
-        document.title = `${p.name} | Elegant Jewellery`;
+        document.title = `${p.name} | Fizara-N-Sitara`;
         try {
           const relatedProducts = await fetchRelatedProducts(p._id);
           setRelated(relatedProducts);

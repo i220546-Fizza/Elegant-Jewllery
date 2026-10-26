@@ -21,7 +21,7 @@ const TESTIMONIALS = [
     name: 'Hina M.',
     role: 'Verified Customer',
     quote:
-      'Elegant Jewellery has become my go-to for gifts. The quality feels premium and the designs are so timeless.',
+      'Fizara-N-Sitara has become my go-to for gifts. The quality feels premium and the designs are so timeless.',
     rating: 4,
   },
 ];

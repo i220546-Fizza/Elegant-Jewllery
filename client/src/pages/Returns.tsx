@@ -4,7 +4,7 @@ import { ShieldIcon } from '../components/Icons';
 
 const Returns = () => {
   useEffect(() => {
-    document.title = 'Returns & Exchanges | Elegant Jewellery';
+    document.title = 'Returns & Exchanges | Fizara-N-Sitara';
   }, []);
 
   return (

@@ -16,7 +16,7 @@ const AdminOrderDetails = () => {
   const [updating, setUpdating] = useState(false);
 
   useEffect(() => {
-    document.title = 'Order Details | Elegant Jewellery Admin';
+    document.title = 'Order Details | Fizara-N-Sitara Admin';
     if (!id) return;
     fetchOrderById(id)
       .then(setOrder)

@@ -8,7 +8,7 @@ const Footer = () => (
     <div className="container-luxe grid grid-cols-1 gap-10 py-16 sm:grid-cols-2 lg:grid-cols-4">
       <div>
         <span className="font-display text-2xl tracking-[0.1em] text-brown-dark">
-          ELEGANT <span className="bg-gold-sheen bg-clip-text text-transparent">JEWELLERY</span>
+          FIZARA-N-<span className="bg-gold-sheen bg-clip-text text-transparent">SITARA</span>
         </span>
         <p className="mt-3 font-display text-sm italic text-champagne-dark">Timeless elegance for every occasion.</p>
         <p className="mt-4 max-w-xs text-sm leading-relaxed text-brown-light">
@@ -68,7 +68,7 @@ const Footer = () => (
 
     <div className="border-t border-brown-dark/10 py-6">
       <p className="container-luxe text-center text-xs text-brown-light">
-        &copy; {new Date().getFullYear()} Elegant Jewellery. All rights reserved.
+        &copy; {new Date().getFullYear()} Fizara-N-Sitara. All rights reserved.
       </p>
     </div>
   </footer>

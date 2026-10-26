@@ -13,7 +13,7 @@ const Signup = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    document.title = 'Create Account | Elegant Jewellery';
+    document.title = 'Create Account | Fizara-N-Sitara';
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -25,7 +25,7 @@ const Signup = () => {
     setLoading(true);
     try {
       await register(name, email, password);
-      toast.success('Account created! Welcome to Elegant Jewellery.');
+      toast.success('Account created! Welcome to Fizara-N-Sitara.');
       navigate('/');
     } catch (err) {
       toast.error(getErrorMessage(err));

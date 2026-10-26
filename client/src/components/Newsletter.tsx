@@ -8,7 +8,7 @@ const Newsletter = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!email.trim()) return;
-    toast.success('Thank you for subscribing to Elegant Jewellery!');
+    toast.success('Thank you for subscribing to Fizara-N-Sitara!');
     setEmail('');
   };
 

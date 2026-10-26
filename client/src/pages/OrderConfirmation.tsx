@@ -16,7 +16,7 @@ const OrderConfirmation = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    document.title = 'Order Confirmed | Elegant Jewellery';
+    document.title = 'Order Confirmed | Fizara-N-Sitara';
     if (!id) return;
     fetchOrderById(id, guestEmail)
       .then(setOrder)

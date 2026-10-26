@@ -15,7 +15,7 @@ const AdminDashboard = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    document.title = 'Admin Dashboard | Elegant Jewellery';
+    document.title = 'Admin Dashboard | Fizara-N-Sitara';
     fetchDashboardStats()
       .then(setStats)
       .catch((err) => toast.error(getErrorMessage(err)))

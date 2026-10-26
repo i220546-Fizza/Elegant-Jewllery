@@ -16,7 +16,7 @@ const AdminOrders = () => {
   const [status, setStatus] = useState<OrderStatus | 'all'>('all');
 
   useEffect(() => {
-    document.title = 'Manage Orders | Elegant Jewellery Admin';
+    document.title = 'Manage Orders | Fizara-N-Sitara Admin';
   }, []);
 
   useEffect(() => {

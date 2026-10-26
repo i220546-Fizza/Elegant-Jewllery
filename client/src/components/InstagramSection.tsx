@@ -21,7 +21,7 @@ const InstagramSection = () => (
           >
             <img
               src={`/uploads/products/${id}.jpg`}
-              alt="Elegant Jewellery on Instagram"
+              alt="Fizara-N-Sitara on Instagram"
               className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
             <span className="absolute inset-0 flex items-center justify-center bg-brown-dark/0 text-ivory opacity-0 transition-all duration-300 group-hover:bg-brown-dark/40 group-hover:opacity-100">

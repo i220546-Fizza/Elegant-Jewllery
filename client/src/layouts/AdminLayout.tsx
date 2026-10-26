@@ -24,7 +24,7 @@ const AdminLayout = () => {
       <Toaster position="top-center" />
       <aside className="hidden w-64 flex-col border-r border-brown-dark/10 bg-brown-dark px-6 py-8 text-ivory lg:flex">
         <Link to="/" className="mb-10 font-display text-xl tracking-widest">
-          ELEGANT <span className="text-champagne">ADMIN</span>
+          FIZARA-N-SITARA <span className="text-champagne">ADMIN</span>
         </Link>
         <nav className="flex flex-col gap-1">
           {LINKS.map(({ label, to, icon: Icon, end }) => (

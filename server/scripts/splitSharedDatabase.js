@@ -1,5 +1,5 @@
 // One-time recovery script: copies documents out of the old shared "test"
-// database (where both Elegant Jewellery and NB Classic Scents used to land
+// database (where both Fizara-N-Sitara and NB Classic Scents used to land
 // by accident) into their own separate databases - elegant_jewellery and
 // nb_classic_scents - based on each document's actual shape. Nothing is ever
 // deleted from "test"; it stays untouched as a backup.

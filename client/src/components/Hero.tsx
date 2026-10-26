@@ -78,7 +78,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         >
-          <p className="section-kicker">Elegant Jewellery</p>
+          <p className="section-kicker">Fizara-N-Sitara</p>
           <h1 className="mt-4 font-display text-4xl leading-tight text-brown-dark sm:text-5xl lg:text-6xl">
             Timeless Elegance,
             <br /> Made to Shine.
@@ -122,7 +122,7 @@ const Hero = () => {
                   onError={() => {
                     if (heroSrc !== HERO_IMAGE_FALLBACK) setHeroSrc(HERO_IMAGE_FALLBACK);
                   }}
-                  alt="Elegant Jewellery showcase"
+                  alt="Fizara-N-Sitara showcase"
                   className="h-full w-full object-cover"
                 />
               </div>

@@ -11,7 +11,7 @@ const ForgotPassword = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    document.title = 'Forgot Password | Elegant Jewellery';
+    document.title = 'Forgot Password | Fizara-N-Sitara';
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {

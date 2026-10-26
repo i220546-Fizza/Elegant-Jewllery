@@ -40,7 +40,7 @@ const AdminProductForm = () => {
   const [uploading, setUploading] = useState(false);
 
   useEffect(() => {
-    document.title = `${isEdit ? 'Edit' : 'Add'} Product | Elegant Jewellery Admin`;
+    document.title = `${isEdit ? 'Edit' : 'Add'} Product | Fizara-N-Sitara Admin`;
     if (!id) return;
     fetchProductByIdOrSlug(id)
       .then((p) => {

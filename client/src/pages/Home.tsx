@@ -36,7 +36,7 @@ const Home = () => {
   const [quickViewProduct, setQuickViewProduct] = useState<Product | null>(null);
 
   useEffect(() => {
-    document.title = 'Elegant Jewellery | Timeless Elegance, Made to Shine';
+    document.title = 'Fizara-N-Sitara | Timeless Elegance, Made to Shine';
 
     const load = async () => {
       try {
