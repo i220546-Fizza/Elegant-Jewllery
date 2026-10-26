@@ -3,7 +3,7 @@ const Order = require('../models/Order');
 const Product = require('../models/Product');
 
 const FREE_SHIPPING_THRESHOLD = 15000;
-const SHIPPING_FEE = 350;
+const SHIPPING_FEE = 200;
 
 // @desc    Create a new order
 // @route   POST /api/orders

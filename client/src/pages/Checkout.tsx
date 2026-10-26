@@ -9,7 +9,7 @@ import { formatCurrency } from '../utils/format';
 import { ShieldIcon, TruckIcon } from '../components/Icons';
 
 const FREE_SHIPPING_THRESHOLD = 15000;
-const SHIPPING_FEE = 350;
+const SHIPPING_FEE = 200;
 
 const Checkout = () => {
   const { items, subtotal, clearCart } = useCart();

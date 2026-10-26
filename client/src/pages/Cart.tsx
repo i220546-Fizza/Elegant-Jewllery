@@ -7,7 +7,7 @@ import EmptyState from '../components/EmptyState';
 import { BagIcon, TrashIcon } from '../components/Icons';
 
 const FREE_SHIPPING_THRESHOLD = 15000;
-const SHIPPING_FEE = 350;
+const SHIPPING_FEE = 200;
 
 const Cart = () => {
   const { items, updateQuantity, removeFromCart, subtotal } = useCart();

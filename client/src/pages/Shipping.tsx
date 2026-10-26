@@ -28,7 +28,7 @@ const Shipping = () => {
           <h2 className="font-display text-xl text-brown-dark">Shipping Fees</h2>
           <p className="mt-2">
             We offer complimentary shipping on all orders over Rs. 15,000. Orders below this amount incur a flat
-            shipping fee of Rs. 350, calculated automatically at checkout.
+            shipping fee of Rs. 200, calculated automatically at checkout.
           </p>
         </div>
         <div>

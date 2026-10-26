@@ -7,7 +7,7 @@ import QuantitySelector from './QuantitySelector';
 import { BagIcon, CloseIcon, TrashIcon } from './Icons';
 
 const FREE_SHIPPING_THRESHOLD = 15000;
-const SHIPPING_FEE = 350;
+const SHIPPING_FEE = 200;
 
 const CartDrawer = () => {
   const { items, updateQuantity, removeFromCart, subtotal, isDrawerOpen, closeDrawer } = useCart();
