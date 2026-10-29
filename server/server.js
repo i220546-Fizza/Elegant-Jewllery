@@ -25,7 +25,24 @@ const app = express();
 
 const allowedOrigins = (process.env.CLIENT_URL || 'http://localhost:5173').split(',').map((o) => o.trim());
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
+
+if (process.env.NODE_ENV !== 'production') {
+  app.use(morgan('dev'));
+}
+
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
+// CORS only applies to the API - static files (the built frontend, uploaded
+// images) are served from this same origin and never need a CORS check.
+// Vite marks its generated <script>/<link> tags crossorigin, which makes the
+// browser send an Origin header even for same-origin asset requests; a
+// globally-applied cors() middleware would reject those if the current
+// domain isn't in CLIENT_URL, turning a same-origin asset load into a 500.
 app.use(
+  '/api',
   cors({
     origin: (origin, callback) => {
       if (!origin || allowedOrigins.includes(origin)) {
@@ -37,16 +54,6 @@ app.use(
     credentials: true,
   })
 );
-
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(cookieParser());
-
-if (process.env.NODE_ENV !== 'production') {
-  app.use(morgan('dev'));
-}
-
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 app.get('/api/health', (req, res) => res.json({ success: true, message: 'Fizara-N-Sitara API is running' }));
 
