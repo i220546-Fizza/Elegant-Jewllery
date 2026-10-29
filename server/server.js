@@ -63,9 +63,24 @@ app.use('/api/admin', adminRoutes);
 // using the two-server Vite proxy setup unless you've also run a client build.
 const clientDistPath = path.join(__dirname, '..', 'client', 'dist');
 if (fs.existsSync(clientDistPath)) {
-  app.use(express.static(clientDistPath));
+  app.use(
+    express.static(clientDistPath, {
+      // Vite content-hashes everything under /assets, so those files are safe
+      // to cache forever - a changed file gets a new filename. index.html is
+      // NOT hashed and must always be revalidated, or browsers/CDNs can keep
+      // serving a stale shell that references deleted asset filenames.
+      setHeaders: (res, filePath) => {
+        if (filePath.endsWith('index.html')) {
+          res.setHeader('Cache-Control', 'no-cache');
+        } else if (filePath.includes(`${path.sep}assets${path.sep}`)) {
+          res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+        }
+      },
+    })
+  );
   app.get('*', (req, res, next) => {
     if (req.path.startsWith('/api') || req.path.startsWith('/uploads')) return next();
+    res.setHeader('Cache-Control', 'no-cache');
     res.sendFile(path.join(clientDistPath, 'index.html'));
   });
 }
